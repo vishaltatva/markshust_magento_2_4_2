@@ -1,0 +1,6 @@
+<!--@subject {{trans "We would love to have your valuable feedback"}} @-->
+{{template config_path="design/email/header_template"}}
+<p>{{trans "Hello %name, " name=$name }}</p>
+<p>{{trans "Thank you so much for placing an order. We would love to have your valuable feedback on this."}}<br/>{{trans "Please provide your review or concern of your purchased items with below links."}}</p>
+{{layout handle="sparsh_review_reminder_email_product_list" product=$product area="frontend"}}
+{{template config_path="design/email/footer_template"}}

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sparsh_ReviewReminder::Sparsh_ReviewReminder" title="Review Reminder"
+             module="Sparsh_ReviewReminder" sortOrder="100" parent="Magento_Backend::marketing"
+             resource="Sparsh_ReviewReminder::review_reminder"  dependsOnConfig="review_reminder/general/enabled"/>
+        <add id="Sparsh_ReviewReminder::ReviewReminder" title="Review Reminder Log"
+             module="Sparsh_ReviewReminder" sortOrder="101" parent="Sparsh_ReviewReminder::Sparsh_ReviewReminder"
+             action="sparsh_review_reminder/log" resource="Sparsh_ReviewReminder::review_reminder"/>
+    </menu>
+</config>

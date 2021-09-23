@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <review_reminder>
+            <general>
+                <enabled>0</enabled>
+                <customer_groups>0,1,2,3</customer_groups>
+            </general>
+            <email>
+                <email_send_after>2</email_send_after>
+                <max_no_of_email>3</max_no_of_email>
+                <clear_log>30</clear_log>
+                <email_sender>general</email_sender>
+                <email_template>review_reminder_email_email_template</email_template>
+            </email>
+            <order>
+                <order_status>complete,closed</order_status>
+            </order>
+        </review_reminder>
+    </default>
+</config>

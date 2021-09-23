@@ -1,0 +1,22 @@
+<?php
+$products = $block->getProduct(); ?>
+<br/>
+<table class="message-details" width="100%">
+    <tr>
+        <th width="20%" align="left"><strong><?= /* @noEscape */ __('Products'); ?></strong></th>
+        <th width="80%" align="left">&nbsp;</th>
+    </tr>
+    <?php foreach ($products as $product) : ?>
+        <tr>
+            <td width="20%" align="center" valign="middle"><img width="100" class="sparsh-review-reminder-img-mail" src="<?= /* @noEscape */ $product['image']; ?>"/></td>
+            <td width="80%" align="left" valign="middle">
+                <table width="100%" cellpadding="40">
+                    <tr>
+                        <td width="60%"><?= /* @noEscape */ $product['name']; ?></td>
+                        <td width="40%"><a href="<?= /* @noEscape */ $product['productUrl']; ?>#review-form">Product Review</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</table>
