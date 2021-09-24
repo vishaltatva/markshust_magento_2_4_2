@@ -11,9 +11,16 @@ set('default_stage', 'staging');
 //set('verbose', '-v');
 
 // Env Configurations
-set('php', '/usr/local/bin/php');
-set('magerun', '/var/www/html/bin/n98-magerun2');
-set('composer', '/usr/local/bin/composer');
+set('php', '/usr/bin/php');
+set('magerun', '/usr/local/bin/n98-magerun2');
+set('composer', '/usr/bin/composer');
+
+set('writable_dirs', [
+    '{{magento_dir}}var',
+    '{{magento_dir}}pub/static',
+    '{{magento_dir}}pub/media',
+    '{{magento_dir}}generated'
+]);
 
 // Project Configurations
 host('192.168.10.11')
